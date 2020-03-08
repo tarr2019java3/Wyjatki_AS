@@ -1,6 +1,7 @@
 package pl.sda.wyjatki;
 
 import pl.sda.wyjatki.exceptions.EmailException;
+import pl.sda.wyjatki.exceptions.WrongInputFormatException;
 
 public class Main {
 
@@ -17,15 +18,8 @@ public class Main {
 //            System.out.println("Niepoprawny parametr, rozmiar tablicy to: "+tab.length);
 //        }
 //        System.out.println("program działa dalej");
-        User user = new User();
-        user.setLogin("Adam");
-        try {
-            user.setEmail("madA");
-        } catch (EmailException e) {
-            e.getMessage("Błędny email!");
-            //e.printStackTrace();   // <-wywali na czerwono
-        }
+        Customer user = new Customer();
+        user.setCustomerData();
         System.out.println("program działa dalej");
     }
 }
-                                   git
