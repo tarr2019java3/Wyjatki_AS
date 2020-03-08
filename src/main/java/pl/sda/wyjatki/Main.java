@@ -23,8 +23,9 @@ public class Main {
             user.setEmail("madA");
         } catch (EmailException e) {
             e.getMessage("Błędny email!");
-            //e.printStackTrace();
+            //e.printStackTrace();   // <-wywali na czerwono
         }
         System.out.println("program działa dalej");
     }
 }
+                                   git
